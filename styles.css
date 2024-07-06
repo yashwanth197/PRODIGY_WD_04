@@ -1,4 +1,43 @@
-  body {
+ body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, 
+          /* Green */
+        #66ccff,  /* Blue */
+        #cc66ff   /* Purple */
+    );
+    background-size: 600% 600%;  /* Adjust the size for smoother gradient */
+    animation: gradientAnimation 20s ease infinite;  /* Adjust animation duration */
+}
+
+/* Animation for Gradient */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Rest of your styles */
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+/* Example section styling */
+.section {
+    padding: 2em;
+    background: rgba(255, 255, 255, 0.8); /* Example: Light background for readability */
+}
+
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -33,7 +72,7 @@ section {
 }
 
 #home {
-    background: linear-gradient(to bottom, #E6E6FA, #9370DB);
+    background: #E6E6FA;
     text-align: center;
 }
 
